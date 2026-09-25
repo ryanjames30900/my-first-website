@@ -1,0 +1,606 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Your PC Parts - Build a PC based on your budget and find PC parts."
+    >
+
+    <title>Your PC Parts</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="navbar">
+        <div class="container nav-container">
+
+            <a href="#" class="logo">
+                Your PC Parts
+            </a>
+
+            <nav class="nav-links">
+                <a href="#builder">PC Builder</a>
+                <a href="#finder">Part Finder</a>
+                <a href="#compare">Compare</a>
+                <a href="#info">About</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="eyebrow">
+                        BUILD SMARTER
+                    </p>
+
+                    <h1>
+                        Build the PC
+                        <span>you actually need.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        Enter your budget and let Your PC Parts
+                        create a balanced PC build using price,
+                        performance and compatibility.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a
+                            href="#builder"
+                            class="btn btn-primary"
+                        >
+                            Build My PC
+                        </a>
+
+                        <a
+                            href="#finder"
+                            class="btn btn-secondary"
+                        >
+                            Find a Part
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-card">
+
+                    <div class="hero-card-glow"></div>
+
+                    <div class="hero-pc-icon">
+                        🖥️
+                    </div>
+
+                    <h2>
+                        Your Budget.
+                        <br>
+                        Your Build.
+                    </h2>
+
+                    <p>
+                        From budget gaming PCs to
+                        high-end machines.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PC BUILDER
+        ========================== -->
+
+        <section
+            id="builder"
+            class="section"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        PC BUILDER
+                    </p>
+
+                    <h2>
+                        Build a PC from your budget
+                    </h2>
+
+                    <p>
+                        Tell us how much you want to spend
+                        and we'll find a balanced combination
+                        of parts.
+                    </p>
+
+                </div>
+
+
+                <div class="builder-card">
+
+                    <div class="budget-input">
+
+                        <label for="budget">
+                            Your Budget
+                        </label>
+
+                        <div class="input-wrapper">
+
+                            <span>€</span>
+
+                            <input
+                                type="number"
+                                id="budget"
+                                placeholder="1000"
+                                min="1"
+                                step="1"
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <button
+                        id="buildButton"
+                        class="btn btn-primary build-button"
+                    >
+                        Build My PC
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="buildMessage"
+                    class="message"
+                ></div>
+
+
+                <div
+                    id="buildResults"
+                    class="results-section"
+                >
+
+                    <div class="results-header">
+
+                        <div>
+                            <p class="eyebrow">
+                                RECOMMENDED BUILD
+                            </p>
+
+                            <h3>
+                                Your PC
+                            </h3>
+                        </div>
+
+                        <div
+                            id="buildTotal"
+                            class="build-total"
+                        >
+                            €0
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="buildParts"
+                        class="product-grid"
+                    ></div>
+
+
+                    <div
+                        id="buildSummary"
+                        class="build-summary"
+                    ></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PART FINDER
+        ========================== -->
+
+        <section
+            id="finder"
+            class="section section-dark"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        PART FINDER
+                    </p>
+
+                    <h2>
+                        Find any PC part
+                    </h2>
+
+                    <p>
+                        Search CPUs, GPUs, RAM, storage,
+                        motherboards, PSUs, cases and coolers.
+                    </p>
+
+                </div>
+
+
+                <div class="search-box">
+
+                    <input
+                        type="text"
+                        id="partSearch"
+                        placeholder="Search for RTX 5060 Ti, Ryzen 7 7800X3D, DDR5, NVMe..."
+                        autocomplete="off"
+                    >
+
+                    <button
+                        id="searchButton"
+                        class="btn btn-primary"
+                    >
+                        Search
+                    </button>
+
+                </div>
+
+
+                <div class="finder-filters">
+
+                    <button
+                        class="filter-button active"
+                        data-category="all"
+                    >
+                        All
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        data-category="CPU"
+                    >
+                        CPUs
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        data-category="GPU"
+                    >
+                        GPUs
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        data-category="RAM"
+                    >
+                        RAM
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        data-category="Storage"
+                    >
+                        Storage
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        data-category="Motherboard"
+                    >
+                        Motherboards
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        data-category="PSU"
+                    >
+                        PSUs
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        data-category="Case"
+                    >
+                        Cases
+                    </button>
+
+                    <button
+                        class="filter-button"
+                        data-category="CPU Cooler"
+                    >
+                        Coolers
+                    </button>
+
+                </div>
+
+
+                <div
+                    id="searchResults"
+                    class="product-grid"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             COMPARE
+        ========================== -->
+
+        <section
+            id="compare"
+            class="section"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        COMPARE
+                    </p>
+
+                    <h2>
+                        Compare PC parts
+                    </h2>
+
+                    <p>
+                        Compare two parts and see how
+                        their price and performance differ.
+                    </p>
+
+                </div>
+
+
+                <div class="compare-container">
+
+                    <div class="compare-input">
+
+                        <label for="compareOne">
+                            Part 1
+                        </label>
+
+                        <input
+                            type="text"
+                            id="compareOne"
+                            placeholder="Example: RTX 4070"
+                        >
+
+                    </div>
+
+
+                    <div class="compare-vs">
+                        VS
+                    </div>
+
+
+                    <div class="compare-input">
+
+                        <label for="compareTwo">
+                            Part 2
+                        </label>
+
+                        <input
+                            type="text"
+                            id="compareTwo"
+                            placeholder="Example: RX 7800 XT"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <button
+                    id="compareButton"
+                    class="btn btn-primary"
+                >
+                    Compare Parts
+                </button>
+
+
+                <div
+                    id="compareResults"
+                    class="compare-results"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INFORMATION
+        ========================== -->
+
+        <section
+            id="info"
+            class="section section-dark"
+        >
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="eyebrow">
+                        ABOUT
+                    </p>
+
+                    <h2>
+                        How Your PC Parts works
+                    </h2>
+
+                </div>
+
+
+                <div class="info-grid">
+
+                    <article class="info-card">
+
+                        <div class="info-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Enter your budget
+                        </h3>
+
+                        <p>
+                            Tell the builder how much you
+                            want to spend.
+                        </p>
+
+                    </article>
+
+
+                    <article class="info-card">
+
+                        <div class="info-number">
+                            02
+                        </div>
+
+                        <h3>
+                            We select the parts
+                        </h3>
+
+                        <p>
+                            The builder looks through the
+                            available components and balances
+                            price and performance.
+                        </p>
+
+                    </article>
+
+
+                    <article class="info-card">
+
+                        <div class="info-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Check your build
+                        </h3>
+
+                        <p>
+                            See your CPU, GPU, RAM, storage,
+                            motherboard, PSU, case and cooler.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+
+                <h3>
+                    Your PC Parts
+                </h3>
+
+                <p>
+                    Build smarter. Spend better.
+                </p>
+
+            </div>
+
+
+            <div class="footer-links">
+
+                <a href="#builder">
+                    PC Builder
+                </a>
+
+                <a href="#finder">
+                    Part Finder
+                </a>
+
+                <a href="#compare">
+                    Compare
+                </a>
+
+            </div>
+
+
+            <p class="copyright">
+                © 2026 Your PC Parts
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         DATA FILES
+    ========================== -->
+
+    <script src="data/cpus.js"></script>
+    <script src="data/gpus.js"></script>
+    <script src="data/ram.js"></script>
+    <script src="data/storage.js"></script>
+    <script src="data/motherboards.js"></script>
+    <script src="data/psus.js"></script>
+    <script src="data/cases.js"></script>
+    <script src="data/coolers.js"></script>
+
+
+    <!-- =========================
+         MAIN APPLICATION
+    ========================== -->
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+```

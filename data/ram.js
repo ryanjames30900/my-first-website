@@ -1,0 +1,622 @@
+const ram = [
+
+// =========================
+// DDR2
+// =========================
+
+{
+name: "2GB DDR2 667MHz",
+category: "RAM",
+brand: "Generic",
+year: 2007,
+price: 5,
+performance: 10,
+capacity: 2,
+speed: 667,
+memoryType: "DDR2",
+image: "https://placehold.co/600x400?text=2GB+DDR2"
+},
+{
+name: "4GB DDR2 800MHz",
+category: "RAM",
+brand: "Generic",
+year: 2008,
+price: 8,
+performance: 15,
+capacity: 4,
+speed: 800,
+memoryType: "DDR2",
+image: "https://placehold.co/600x400?text=4GB+DDR2"
+},
+{
+name: "4GB DDR2 1066MHz",
+category: "Generic",
+brand: "Generic",
+year: 2009,
+price: 10,
+performance: 18,
+capacity: 4,
+speed: 1066,
+memoryType: "DDR2",
+image: "https://placehold.co/600x400?text=4GB+DDR2+1066"
+},
+{
+name: "8GB DDR2 800MHz",
+category: "RAM",
+brand: "Generic",
+year: 2010,
+price: 20,
+performance: 25,
+capacity: 8,
+speed: 800,
+memoryType: "DDR2",
+image: "https://placehold.co/600x400?text=8GB+DDR2"
+},
+
+// =========================
+// DDR3
+// =========================
+
+{
+name: "4GB DDR3 1066MHz",
+category: "RAM",
+brand: "Generic",
+year: 2010,
+price: 7,
+performance: 20,
+capacity: 4,
+speed: 1066,
+memoryType: "DDR3",
+image: "https://placehold.co/600x400?text=4GB+DDR3"
+},
+{
+name: "4GB DDR3 1333MHz",
+category: "RAM",
+brand: "Generic",
+year: 2011,
+price: 8,
+performance: 23,
+capacity: 4,
+speed: 1333,
+memoryType: "DDR3",
+image: "https://placehold.co/600x400?text=4GB+DDR3+1333"
+},
+{
+name: "8GB DDR3 1333MHz",
+category: "RAM",
+brand: "Generic",
+year: 2011,
+price: 11,
+performance: 28,
+capacity: 8,
+speed: 1333,
+memoryType: "DDR3",
+image: "https://placehold.co/600x400?text=8GB+DDR3+1333"
+},
+{
+name: "8GB DDR3 1600MHz",
+category: "RAM",
+brand: "Generic",
+year: 2012,
+price: 12,
+performance: 32,
+capacity: 8,
+speed: 1600,
+memoryType: "DDR3",
+image: "https://placehold.co/600x400?text=8GB+DDR3+1600"
+},
+{
+name: "8GB DDR3 1866MHz",
+category: "RAM",
+brand: "Generic",
+year: 2013,
+price: 15,
+performance: 36,
+capacity: 8,
+speed: 1866,
+memoryType: "DDR3",
+image: "https://placehold.co/600x400?text=8GB+DDR3+1866"
+},
+{
+name: "16GB DDR3 1600MHz",
+category: "RAM",
+brand: "Generic",
+year: 2013,
+price: 22,
+performance: 42,
+capacity: 16,
+speed: 1600,
+memoryType: "DDR3",
+image: "https://placehold.co/600x400?text=16GB+DDR3"
+},
+{
+name: "16GB DDR3 1866MHz",
+category: "RAM",
+brand: "Generic",
+year: 2014,
+price: 25,
+performance: 46,
+capacity: 16,
+speed: 1866,
+memoryType: "DDR3",
+image: "https://placehold.co/600x400?text=16GB+DDR3+1866"
+},
+{
+name: "32GB DDR3 1600MHz",
+category: "RAM",
+brand: "Generic",
+year: 2015,
+price: 55,
+performance: 55,
+capacity: 32,
+speed: 1600,
+memoryType: "DDR3",
+image: "https://placehold.co/600x400?text=32GB+DDR3"
+},
+
+// =========================
+// DDR4
+// =========================
+
+{
+name: "4GB DDR4 2133MHz",
+category: "RAM",
+brand: "Generic",
+year: 2015,
+price: 8,
+performance: 35,
+capacity: 4,
+speed: 2133,
+memoryType: "DDR4",
+image: "https://placehold.co/600x400?text=4GB+DDR4"
+},
+{
+name: "8GB DDR4 2133MHz",
+category: "RAM",
+brand: "Generic",
+year: 2016,
+price: 12,
+performance: 45,
+capacity: 8,
+speed: 2133,
+memoryType: "DDR4",
+image: "https://placehold.co/600x400?text=8GB+DDR4+2133"
+},
+{
+name: "8GB DDR4 2400MHz",
+category: "RAM",
+brand: "Generic",
+year: 2017,
+price: 13,
+performance: 48,
+capacity: 8,
+speed: 2400,
+memoryType: "DDR4",
+image: "https://placehold.co/600x400?text=8GB+DDR4+2400"
+},
+{
+name: "8GB DDR4 2666MHz",
+category: "RAM",
+brand: "Generic",
+year: 2018,
+price: 14,
+performance: 51,
+capacity: 8,
+speed: 2666,
+memoryType: "DDR4",
+image: "https://placehold.co/600x400?text=8GB+DDR4+2666"
+},
+{
+name: "8GB DDR4 3000MHz",
+category: "RAM",
+brand: "Generic",
+year: 2018,
+price: 16,
+performance: 55,
+capacity: 8,
+speed: 3000,
+memoryType: "DDR4",
+image: "https://placehold.co/600x400?text=8GB+DDR4+3000"
+},
+{
+name: "8GB DDR4 3200MHz",
+category: "RAM",
+brand: "Generic",
+year: 2019,
+price: 18,
+performance: 58,
+capacity: 8,
+speed: 3200,
+memoryType: "DDR4",
+image: "https://placehold.co/600x400?text=8GB+DDR4+3200"
+},
+{
+name: "16GB DDR4 2400MHz",
+category: "RAM",
+brand: "Generic",
+year: 2017,
+price: 24,
+performance: 58,
+capacity: 16,
+speed: 2400,
+memoryType: "DDR4",
+image: "https://placehold.co/600x400?text=16GB+DDR4+2400"
+},
+{
+name: "16GB DDR4 2666MHz",
+category: "RAM",
+brand: "Generic",
+year: 2017,
+price: 28,
+performance: 62,
+capacity: 16,
+speed: 2666,
+memoryType: "DDR4",
+image: "https://placehold.co/600x400?text=16GB+DDR4+2666"
+},
+{
+name: "16GB DDR4 3000MHz",
+category: "RAM",
+brand: "Generic",
+year: 2018,
+price: 30,
+performance: 66,
+capacity: 16,
+speed: 3000,
+memoryType: "DDR4",
+image: "https://placehold.co/600x400?text=16GB+DDR4+3000"
+},
+{
+name: "16GB DDR4 3200MHz",
+category: "RAM",
+brand: "Generic",
+year: 2019,
+price: 32,
+performance: 70,
+capacity: 16,
+speed: 3200,
+memoryType: "DDR4",
+image: "https://placehold.co/600x400?text=16GB+DDR4+3200"
+},
+{
+name: "16GB DDR4 3600MHz",
+category: "RAM",
+brand: "Generic",
+year: 2020,
+price: 38,
+performance: 75,
+capacity: 16,
+speed: 3600,
+memoryType: "DDR4",
+image: "https://placehold.co/600x400?text=16GB+DDR4+3600"
+},
+{
+name: "32GB DDR4 2666MHz",
+category: "RAM",
+brand: "Generic",
+year: 2018,
+price: 50,
+performance: 76,
+capacity: 32,
+speed: 2666,
+memoryType: "DDR4",
+image: "https://placehold.co/600x400?text=32GB+DDR4+2666"
+},
+{
+name: "32GB DDR4 3200MHz",
+category: "RAM",
+brand: "Generic",
+year: 2020,
+price: 55,
+performance: 90,
+capacity: 32,
+speed: 3200,
+memoryType: "DDR4",
+image: "https://placehold.co/600x400?text=32GB+DDR4+3200"
+},
+{
+name: "32GB DDR4 3600MHz",
+category: "RAM",
+brand: "Generic",
+year: 2021,
+price: 65,
+performance: 98,
+capacity: 32,
+speed: 3600,
+memoryType: "DDR4",
+image: "https://placehold.co/600x400?text=32GB+DDR4+3600"
+},
+{
+name: "64GB DDR4 3200MHz",
+category: "RAM",
+brand: "Generic",
+year: 2021,
+price: 110,
+performance: 120,
+capacity: 64,
+speed: 3200,
+memoryType: "DDR4",
+image: "https://placehold.co/600x400?text=64GB+DDR4"
+},
+{
+name: "64GB DDR4 3600MHz",
+category: "RAM",
+brand: "Generic",
+year: 2022,
+price: 130,
+performance: 130,
+capacity: 64,
+speed: 3600,
+memoryType: "DDR4",
+image: "https://placehold.co/600x400?text=64GB+DDR4+3600"
+},
+{
+name: "128GB DDR4 3200MHz",
+category: "RAM",
+brand: "Generic",
+year: 2022,
+price: 240,
+performance: 150,
+capacity: 128,
+speed: 3200,
+memoryType: "DDR4",
+image: "https://placehold.co/600x400?text=128GB+DDR4"
+},
+
+// =========================
+// DDR5
+// =========================
+
+{
+name: "8GB DDR5 4800MHz",
+category: "RAM",
+brand: "Generic",
+year: 2021,
+price: 25,
+performance: 55,
+capacity: 8,
+speed: 4800,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=8GB+DDR5"
+},
+{
+name: "16GB DDR5 4800MHz",
+category: "RAM",
+brand: "Generic",
+year: 2021,
+price: 45,
+performance: 80,
+capacity: 16,
+speed: 4800,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=16GB+DDR5+4800"
+},
+{
+name: "16GB DDR5 5200MHz",
+category: "RAM",
+brand: "Generic",
+year: 2022,
+price: 50,
+performance: 86,
+capacity: 16,
+speed: 5200,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=16GB+DDR5+5200"
+},
+{
+name: "16GB DDR5 5600MHz",
+category: "RAM",
+brand: "Generic",
+year: 2022,
+price: 55,
+performance: 90,
+capacity: 16,
+speed: 5600,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=16GB+DDR5+5600"
+},
+{
+name: "16GB DDR5 6000MHz",
+category: "RAM",
+brand: "Generic",
+year: 2023,
+price: 60,
+performance: 95,
+capacity: 16,
+speed: 6000,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=16GB+DDR5+6000"
+},
+{
+name: "16GB DDR5 6400MHz",
+category: "RAM",
+brand: "Generic",
+year: 2023,
+price: 70,
+performance: 100,
+capacity: 16,
+speed: 6400,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=16GB+DDR5+6400"
+},
+{
+name: "32GB DDR5 4800MHz",
+category: "RAM",
+brand: "Generic",
+year: 2022,
+price: 65,
+performance: 95,
+capacity: 32,
+speed: 4800,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=32GB+DDR5+4800"
+},
+{
+name: "32GB DDR5 5200MHz",
+category: "RAM",
+brand: "Generic",
+year: 2022,
+price: 70,
+performance: 100,
+capacity: 32,
+speed: 5200,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=32GB+DDR5+5200"
+},
+{
+name: "32GB DDR5 5600MHz",
+category: "RAM",
+brand: "Generic",
+year: 2022,
+price: 75,
+performance: 105,
+capacity: 32,
+speed: 5600,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=32GB+DDR5+5600"
+},
+{
+name: "32GB DDR5 6000MHz",
+category: "RAM",
+brand: "Generic",
+year: 2023,
+price: 85,
+performance: 115,
+capacity: 32,
+speed: 6000,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=32GB+DDR5+6000"
+},
+{
+name: "32GB DDR5 6400MHz",
+category: "RAM",
+brand: "Generic",
+year: 2023,
+price: 100,
+performance: 122,
+capacity: 32,
+speed: 6400,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=32GB+DDR5+6400"
+},
+{
+name: "48GB DDR5 5600MHz",
+category: "RAM",
+brand: "Generic",
+year: 2024,
+price: 115,
+performance: 125,
+capacity: 48,
+speed: 5600,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=48GB+DDR5+5600"
+},
+{
+name: "48GB DDR5 6000MHz",
+category: "RAM",
+brand: "Generic",
+year: 2024,
+price: 125,
+performance: 135,
+capacity: 48,
+speed: 6000,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=48GB+DDR5+6000"
+},
+{
+name: "64GB DDR5 5200MHz",
+category: "RAM",
+brand: "Generic",
+year: 2022,
+price: 125,
+performance: 130,
+capacity: 64,
+speed: 5200,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=64GB+DDR5+5200"
+},
+{
+name: "64GB DDR5 5600MHz",
+category: "RAM",
+brand: "Generic",
+year: 2023,
+price: 140,
+performance: 140,
+capacity: 64,
+speed: 5600,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=64GB+DDR5+5600"
+},
+{
+name: "64GB DDR5 6000MHz",
+category: "RAM",
+brand: "Generic",
+year: 2023,
+price: 150,
+performance: 150,
+capacity: 64,
+speed: 6000,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=64GB+DDR5+6000"
+},
+{
+name: "64GB DDR5 6400MHz",
+category: "RAM",
+brand: "Generic",
+year: 2024,
+price: 175,
+performance: 160,
+capacity: 64,
+speed: 6400,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=64GB+DDR5+6400"
+},
+{
+name: "96GB DDR5 5600MHz",
+category: "RAM",
+brand: "Generic",
+year: 2024,
+price: 200,
+performance: 165,
+capacity: 96,
+speed: 5600,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=96GB+DDR5"
+},
+{
+name: "96GB DDR5 6000MHz",
+category: "RAM",
+brand: "Generic",
+year: 2024,
+price: 220,
+performance: 175,
+capacity: 96,
+speed: 6000,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=96GB+DDR5+6000"
+},
+{
+name: "128GB DDR5 5600MHz",
+category: "RAM",
+brand: "Generic",
+year: 2024,
+price: 300,
+performance: 190,
+capacity: 128,
+speed: 5600,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=128GB+DDR5"
+},
+{
+name: "128GB DDR5 6000MHz",
+category: "RAM",
+brand: "Generic",
+year: 2025,
+price: 340,
+performance: 205,
+capacity: 128,
+speed: 6000,
+memoryType: "DDR5",
+image: "https://placehold.co/600x400?text=128GB+DDR5+6000"
+}
+];

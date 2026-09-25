@@ -1,0 +1,1205 @@
+```javascript
+const psus = [
+
+  // =====================================================
+  // 250W
+  // =====================================================
+  {
+    name: "Generic 250W ATX",
+    category: "PSU",
+    brand: "Generic",
+    year: 2005,
+    price: 25,
+    performance: 20,
+    wattage: 250,
+    efficiency: "Standard",
+    modular: "Non-Modular",
+    standard: "ATX",
+    pcieConnectors: 0,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=250W"
+  },
+  {
+    name: "Generic 250W Office",
+    category: "PSU",
+    brand: "Generic",
+    year: 2008,
+    price: 28,
+    performance: 22,
+    wattage: 250,
+    efficiency: "Standard",
+    modular: "Non-Modular",
+    standard: "ATX",
+    pcieConnectors: 0,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=250W+Office"
+  },
+
+  // =====================================================
+  // 300W
+  // =====================================================
+  {
+    name: "Generic 300W ATX",
+    category: "PSU",
+    brand: "Generic",
+    year: 2007,
+    price: 28,
+    performance: 24,
+    wattage: 300,
+    efficiency: "Standard",
+    modular: "Non-Modular",
+    standard: "ATX",
+    pcieConnectors: 0,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=300W"
+  },
+  {
+    name: "Generic 300W 80 Plus",
+    category: "PSU",
+    brand: "Generic",
+    year: 2010,
+    price: 35,
+    performance: 28,
+    wattage: 300,
+    efficiency: "80 Plus",
+    modular: "Non-Modular",
+    standard: "ATX",
+    pcieConnectors: 0,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=300W+80+Plus"
+  },
+
+  // =====================================================
+  // 350W
+  // =====================================================
+  {
+    name: "Generic 350W ATX",
+    category: "PSU",
+    brand: "Generic",
+    year: 2009,
+    price: 32,
+    performance: 29,
+    wattage: 350,
+    efficiency: "Standard",
+    modular: "Non-Modular",
+    standard: "ATX",
+    pcieConnectors: 0,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=350W"
+  },
+  {
+    name: "Generic 350W 80 Plus",
+    category: "PSU",
+    brand: "Generic",
+    year: 2012,
+    price: 40,
+    performance: 34,
+    wattage: 350,
+    efficiency: "80 Plus",
+    modular: "Non-Modular",
+    standard: "ATX",
+    pcieConnectors: 1,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=350W+80+Plus"
+  },
+  {
+    name: "Generic 350W Bronze",
+    category: "PSU",
+    brand: "Generic",
+    year: 2015,
+    price: 48,
+    performance: 39,
+    wattage: 350,
+    efficiency: "80 Plus Bronze",
+    modular: "Non-Modular",
+    standard: "ATX",
+    pcieConnectors: 1,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=350W+Bronze"
+  },
+
+  // =====================================================
+  // 400W
+  // =====================================================
+  {
+    name: "Generic 400W ATX",
+    category: "PSU",
+    brand: "Generic",
+    year: 2010,
+    price: 35,
+    performance: 32,
+    wattage: 400,
+    efficiency: "Standard",
+    modular: "Non-Modular",
+    standard: "ATX",
+    pcieConnectors: 1,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=400W"
+  },
+  {
+    name: "Generic 400W 80 Plus",
+    category: "PSU",
+    brand: "Generic",
+    year: 2012,
+    price: 45,
+    performance: 38,
+    wattage: 400,
+    efficiency: "80 Plus",
+    modular: "Non-Modular",
+    standard: "ATX",
+    pcieConnectors: 1,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=400W+80+Plus"
+  },
+  {
+    name: "Generic 400W Bronze",
+    category: "PSU",
+    brand: "Generic",
+    year: 2015,
+    price: 52,
+    performance: 43,
+    wattage: 400,
+    efficiency: "80 Plus Bronze",
+    modular: "Semi-Modular",
+    standard: "ATX",
+    pcieConnectors: 1,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=400W+Bronze"
+  },
+
+  // =====================================================
+  // 450W
+  // =====================================================
+  {
+    name: "Generic 450W ATX",
+    category: "PSU",
+    brand: "Generic",
+    year: 2011,
+    price: 40,
+    performance: 37,
+    wattage: 450,
+    efficiency: "Standard",
+    modular: "Non-Modular",
+    standard: "ATX",
+    pcieConnectors: 1,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=450W"
+  },
+  {
+    name: "Generic 450W 80 Plus",
+    category: "PSU",
+    brand: "Generic",
+    year: 2014,
+    price: 50,
+    performance: 43,
+    wattage: 450,
+    efficiency: "80 Plus",
+    modular: "Non-Modular",
+    standard: "ATX",
+    pcieConnectors: 1,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=450W+80+Plus"
+  },
+  {
+    name: "Generic 450W Bronze",
+    category: "PSU",
+    brand: "Generic",
+    year: 2015,
+    price: 55,
+    performance: 47,
+    wattage: 450,
+    efficiency: "80 Plus Bronze",
+    modular: "Non-Modular",
+    standard: "ATX",
+    pcieConnectors: 1,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=450W+Bronze"
+  },
+  {
+    name: "Generic 450W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2018,
+    price: 70,
+    performance: 56,
+    wattage: 450,
+    efficiency: "80 Plus Gold",
+    modular: "Semi-Modular",
+    standard: "ATX",
+    pcieConnectors: 1,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=450W+Gold"
+  },
+
+  // =====================================================
+  // 500W
+  // =====================================================
+  {
+    name: "Generic 500W ATX",
+    category: "PSU",
+    brand: "Generic",
+    year: 2012,
+    price: 42,
+    performance: 42,
+    wattage: 500,
+    efficiency: "Standard",
+    modular: "Non-Modular",
+    standard: "ATX",
+    pcieConnectors: 1,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=500W"
+  },
+  {
+    name: "Generic 500W 80 Plus",
+    category: "PSU",
+    brand: "Generic",
+    year: 2014,
+    price: 50,
+    performance: 47,
+    wattage: 500,
+    efficiency: "80 Plus",
+    modular: "Non-Modular",
+    standard: "ATX",
+    pcieConnectors: 1,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=500W+80+Plus"
+  },
+  {
+    name: "Generic 500W Bronze",
+    category: "PSU",
+    brand: "Generic",
+    year: 2016,
+    price: 60,
+    performance: 52,
+    wattage: 500,
+    efficiency: "80 Plus Bronze",
+    modular: "Non-Modular",
+    standard: "ATX",
+    pcieConnectors: 2,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=500W+Bronze"
+  },
+  {
+    name: "Generic 500W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2019,
+    price: 78,
+    performance: 62,
+    wattage: 500,
+    efficiency: "80 Plus Gold",
+    modular: "Semi-Modular",
+    standard: "ATX",
+    pcieConnectors: 2,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=500W+Gold"
+  },
+
+  // =====================================================
+  // 550W
+  // =====================================================
+  {
+    name: "Generic 550W 80 Plus",
+    category: "PSU",
+    brand: "Generic",
+    year: 2015,
+    price: 55,
+    performance: 51,
+    wattage: 550,
+    efficiency: "80 Plus",
+    modular: "Non-Modular",
+    standard: "ATX",
+    pcieConnectors: 2,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=550W+80+Plus"
+  },
+  {
+    name: "Generic 550W Bronze",
+    category: "PSU",
+    brand: "Generic",
+    year: 2017,
+    price: 65,
+    performance: 56,
+    wattage: 550,
+    efficiency: "80 Plus Bronze",
+    modular: "Semi-Modular",
+    standard: "ATX",
+    pcieConnectors: 2,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=550W+Bronze"
+  },
+  {
+    name: "Generic 550W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2019,
+    price: 80,
+    performance: 64,
+    wattage: 550,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 2,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=550W+Gold"
+  },
+
+  // =====================================================
+  // 600W
+  // =====================================================
+  {
+    name: "Generic 600W ATX",
+    category: "PSU",
+    brand: "Generic",
+    year: 2014,
+    price: 50,
+    performance: 48,
+    wattage: 600,
+    efficiency: "Standard",
+    modular: "Non-Modular",
+    standard: "ATX",
+    pcieConnectors: 2,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=600W"
+  },
+  {
+    name: "Generic 600W 80 Plus",
+    category: "PSU",
+    brand: "Generic",
+    year: 2016,
+    price: 58,
+    performance: 54,
+    wattage: 600,
+    efficiency: "80 Plus",
+    modular: "Non-Modular",
+    standard: "ATX",
+    pcieConnectors: 2,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=600W+80+Plus"
+  },
+  {
+    name: "Generic 600W Bronze",
+    category: "PSU",
+    brand: "Generic",
+    year: 2018,
+    price: 70,
+    performance: 61,
+    wattage: 600,
+    efficiency: "80 Plus Bronze",
+    modular: "Semi-Modular",
+    standard: "ATX",
+    pcieConnectors: 2,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=600W+Bronze"
+  },
+  {
+    name: "Generic 600W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2020,
+    price: 88,
+    performance: 70,
+    wattage: 600,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 2,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=600W+Gold"
+  },
+
+  // =====================================================
+  // 650W
+  // =====================================================
+  {
+    name: "Generic 650W Bronze",
+    category: "PSU",
+    brand: "Generic",
+    year: 2018,
+    price: 75,
+    performance: 64,
+    wattage: 650,
+    efficiency: "80 Plus Bronze",
+    modular: "Semi-Modular",
+    standard: "ATX",
+    pcieConnectors: 2,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=650W+Bronze"
+  },
+  {
+    name: "Generic 650W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2020,
+    price: 95,
+    performance: 74,
+    wattage: 650,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 3,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=650W+Gold"
+  },
+  {
+    name: "Generic 650W Platinum",
+    category: "PSU",
+    brand: "Generic",
+    year: 2021,
+    price: 120,
+    performance: 82,
+    wattage: 650,
+    efficiency: "80 Plus Platinum",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 3,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=650W+Platinum"
+  },
+
+  // =====================================================
+  // 700W
+  // =====================================================
+  {
+    name: "Generic 700W Bronze",
+    category: "PSU",
+    brand: "Generic",
+    year: 2018,
+    price: 78,
+    performance: 67,
+    wattage: 700,
+    efficiency: "80 Plus Bronze",
+    modular: "Semi-Modular",
+    standard: "ATX",
+    pcieConnectors: 3,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=700W+Bronze"
+  },
+  {
+    name: "Generic 700W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2020,
+    price: 100,
+    performance: 76,
+    wattage: 700,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 3,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=700W+Gold"
+  },
+  {
+    name: "Generic 700W Platinum",
+    category: "PSU",
+    brand: "Generic",
+    year: 2022,
+    price: 135,
+    performance: 86,
+    wattage: 700,
+    efficiency: "80 Plus Platinum",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 3,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=700W+Platinum"
+  },
+
+  // =====================================================
+  // 750W
+  // =====================================================
+  {
+    name: "Generic 750W Bronze",
+    category: "PSU",
+    brand: "Generic",
+    year: 2017,
+    price: 80,
+    performance: 69,
+    wattage: 750,
+    efficiency: "80 Plus Bronze",
+    modular: "Semi-Modular",
+    standard: "ATX",
+    pcieConnectors: 3,
+    cpuConnectors: 1,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=750W+Bronze"
+  },
+  {
+    name: "Generic 750W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2019,
+    price: 105,
+    performance: 79,
+    wattage: 750,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 3,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=750W+Gold"
+  },
+  {
+    name: "Generic 750W Platinum",
+    category: "PSU",
+    brand: "Generic",
+    year: 2021,
+    price: 130,
+    performance: 86,
+    wattage: 750,
+    efficiency: "80 Plus Platinum",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 4,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=750W+Platinum"
+  },
+  {
+    name: "Generic 750W ATX 3.0 Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2022,
+    price: 125,
+    performance: 91,
+    wattage: 750,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX 3.0",
+    pcieConnectors: 3,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=750W+ATX+3"
+  },
+
+  // =====================================================
+  // 800W
+  // =====================================================
+  {
+    name: "Generic 800W Bronze",
+    category: "PSU",
+    brand: "Generic",
+    year: 2018,
+    price: 90,
+    performance: 72,
+    wattage: 800,
+    efficiency: "80 Plus Bronze",
+    modular: "Semi-Modular",
+    standard: "ATX",
+    pcieConnectors: 3,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=800W+Bronze"
+  },
+  {
+    name: "Generic 800W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2020,
+    price: 115,
+    performance: 82,
+    wattage: 800,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 4,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=800W+Gold"
+  },
+  {
+    name: "Generic 800W Platinum",
+    category: "PSU",
+    brand: "Generic",
+    year: 2021,
+    price: 145,
+    performance: 91,
+    wattage: 800,
+    efficiency: "80 Plus Platinum",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 4,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=800W+Platinum"
+  },
+  {
+    name: "Generic 800W ATX 3.0 Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2022,
+    price: 140,
+    performance: 95,
+    wattage: 800,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX 3.0",
+    pcieConnectors: 4,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=800W+ATX+3"
+  },
+
+  // =====================================================
+  // 850W
+  // =====================================================
+  {
+    name: "Generic 850W Bronze",
+    category: "PSU",
+    brand: "Generic",
+    year: 2018,
+    price: 95,
+    performance: 75,
+    wattage: 850,
+    efficiency: "80 Plus Bronze",
+    modular: "Semi-Modular",
+    standard: "ATX",
+    pcieConnectors: 4,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=850W+Bronze"
+  },
+  {
+    name: "Generic 850W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2020,
+    price: 120,
+    performance: 85,
+    wattage: 850,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 4,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=850W+Gold"
+  },
+  {
+    name: "Generic 850W Platinum",
+    category: "PSU",
+    brand: "Generic",
+    year: 2021,
+    price: 145,
+    performance: 91,
+    wattage: 850,
+    efficiency: "80 Plus Platinum",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 4,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=850W+Platinum"
+  },
+  {
+    name: "Generic 850W ATX 3.0 Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2022,
+    price: 135,
+    performance: 94,
+    wattage: 850,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX 3.0",
+    pcieConnectors: 4,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=850W+ATX+3"
+  },
+
+  // =====================================================
+  // 900W
+  // =====================================================
+  {
+    name: "Generic 900W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2020,
+    price: 130,
+    performance: 87,
+    wattage: 900,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 4,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=900W+Gold"
+  },
+  {
+    name: "Generic 900W Platinum",
+    category: "PSU",
+    brand: "Generic",
+    year: 2022,
+    price: 160,
+    performance: 96,
+    wattage: 900,
+    efficiency: "80 Plus Platinum",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 4,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=900W+Platinum"
+  },
+
+  // =====================================================
+  // 1000W
+  // =====================================================
+  {
+    name: "Generic 1000W Bronze",
+    category: "PSU",
+    brand: "Generic",
+    year: 2018,
+    price: 110,
+    performance: 80,
+    wattage: 1000,
+    efficiency: "80 Plus Bronze",
+    modular: "Semi-Modular",
+    standard: "ATX",
+    pcieConnectors: 4,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=1000W+Bronze"
+  },
+  {
+    name: "Generic 1000W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2019,
+    price: 140,
+    performance: 90,
+    wattage: 1000,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 4,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=1000W+Gold"
+  },
+  {
+    name: "Generic 1000W Platinum",
+    category: "PSU",
+    brand: "Generic",
+    year: 2021,
+    price: 165,
+    performance: 96,
+    wattage: 1000,
+    efficiency: "80 Plus Platinum",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 4,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=1000W+Platinum"
+  },
+  {
+    name: "Generic 1000W ATX 3.0 Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2022,
+    price: 155,
+    performance: 99,
+    wattage: 1000,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX 3.0",
+    pcieConnectors: 4,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=1000W+ATX+3"
+  },
+  {
+    name: "Generic 1000W ATX 3.1 Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2024,
+    price: 165,
+    performance: 102,
+    wattage: 1000,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX 3.1",
+    pcieConnectors: 4,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=1000W+ATX+3.1"
+  },
+
+  // =====================================================
+  // 1100W
+  // =====================================================
+  {
+    name: "Generic 1100W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2020,
+    price: 155,
+    performance: 93,
+    wattage: 1100,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 4,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=1100W+Gold"
+  },
+  {
+    name: "Generic 1100W ATX 3.0 Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2022,
+    price: 175,
+    performance: 101,
+    wattage: 1100,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX 3.0",
+    pcieConnectors: 5,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=1100W+ATX+3"
+  },
+
+  // =====================================================
+  // 1200W
+  // =====================================================
+  {
+    name: "Generic 1200W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2019,
+    price: 170,
+    performance: 96,
+    wattage: 1200,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 5,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=1200W+Gold"
+  },
+  {
+    name: "Generic 1200W Platinum",
+    category: "PSU",
+    brand: "Generic",
+    year: 2021,
+    price: 200,
+    performance: 103,
+    wattage: 1200,
+    efficiency: "80 Plus Platinum",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 5,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=1200W+Platinum"
+  },
+  {
+    name: "Generic 1200W ATX 3.0 Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2022,
+    price: 190,
+    performance: 106,
+    wattage: 1200,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX 3.0",
+    pcieConnectors: 5,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=1200W+ATX+3"
+  },
+  {
+    name: "Generic 1200W ATX 3.1 Platinum",
+    category: "PSU",
+    brand: "Generic",
+    year: 2024,
+    price: 220,
+    performance: 112,
+    wattage: 1200,
+    efficiency: "80 Plus Platinum",
+    modular: "Fully Modular",
+    standard: "ATX 3.1",
+    pcieConnectors: 5,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=1200W+ATX+3.1"
+  },
+
+  // =====================================================
+  // 1300W
+  // =====================================================
+  {
+    name: "Generic 1300W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2020,
+    price: 190,
+    performance: 100,
+    wattage: 1300,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX",
+    pcieConnectors: 5,
+    cpuConnectors: 2,
+    twelveVHPWR: false,
+    image: "https://placehold.co/600x400?text=1300W+Gold"
+  },
+  {
+    name: "Generic 1300W Platinum",
+    category: "PSU",
+    brand: "Generic",
+    year: 2022,
+    price: 225,
+    performance: 109,
+    wattage: 1300,
+    efficiency: "80 Plus Platinum",
+    modular: "Fully Modular",
+    standard: "ATX 3.0",
+    pcieConnectors: 6,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=1300W+Platinum"
+  },
+
+  // =====================================================
+  // 1350W
+  // =====================================================
+  {
+    name: "Generic 1350W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2021,
+    price: 205,
+    performance: 104,
+    wattage: 1350,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX 3.0",
+    pcieConnectors: 6,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=1350W+Gold"
+  },
+
+  // =====================================================
+  // 1400W
+  // =====================================================
+  {
+    name: "Generic 1400W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2021,
+    price: 210,
+    performance: 106,
+    wattage: 1400,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX 3.0",
+    pcieConnectors: 6,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=1400W+Gold"
+  },
+  {
+    name: "Generic 1400W Platinum",
+    category: "PSU",
+    brand: "Generic",
+    year: 2023,
+    price: 250,
+    performance: 116,
+    wattage: 1400,
+    efficiency: "80 Plus Platinum",
+    modular: "Fully Modular",
+    standard: "ATX 3.1",
+    pcieConnectors: 6,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=1400W+Platinum"
+  },
+
+  // =====================================================
+  // 1500W
+  // =====================================================
+  {
+    name: "Generic 1500W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2020,
+    price: 215,
+    performance: 105,
+    wattage: 1500,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX 3.0",
+    pcieConnectors: 6,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=1500W+Gold"
+  },
+  {
+    name: "Generic 1500W Platinum",
+    category: "PSU",
+    brand: "Generic",
+    year: 2022,
+    price: 250,
+    performance: 114,
+    wattage: 1500,
+    efficiency: "80 Plus Platinum",
+    modular: "Fully Modular",
+    standard: "ATX 3.0",
+    pcieConnectors: 6,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=1500W+Platinum"
+  },
+
+  // =====================================================
+  // 1600W
+  // =====================================================
+  {
+    name: "Generic 1600W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2021,
+    price: 240,
+    performance: 110,
+    wattage: 1600,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX 3.0",
+    pcieConnectors: 6,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=1600W+Gold"
+  },
+  {
+    name: "Generic 1600W Platinum",
+    category: "PSU",
+    brand: "Generic",
+    year: 2022,
+    price: 280,
+    performance: 120,
+    wattage: 1600,
+    efficiency: "80 Plus Platinum",
+    modular: "Fully Modular",
+    standard: "ATX 3.1",
+    pcieConnectors: 6,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=1600W+Platinum"
+  },
+
+  // =====================================================
+  // 1800W
+  // =====================================================
+  {
+    name: "Generic 1800W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2022,
+    price: 290,
+    performance: 118,
+    wattage: 1800,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX 3.0",
+    pcieConnectors: 6,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=1800W+Gold"
+  },
+  {
+    name: "Generic 1800W Platinum",
+    category: "PSU",
+    brand: "Generic",
+    year: 2023,
+    price: 320,
+    performance: 125,
+    wattage: 1800,
+    efficiency: "80 Plus Platinum",
+    modular: "Fully Modular",
+    standard: "ATX 3.1",
+    pcieConnectors: 6,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=1800W+Platinum"
+  },
+
+  // =====================================================
+  // 2000W
+  // =====================================================
+  {
+    name: "Generic 2000W Gold",
+    category: "PSU",
+    brand: "Generic",
+    year: 2023,
+    price: 320,
+    performance: 122,
+    wattage: 2000,
+    efficiency: "80 Plus Gold",
+    modular: "Fully Modular",
+    standard: "ATX 3.0",
+    pcieConnectors: 6,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=2000W+Gold"
+  },
+  {
+    name: "Generic 2000W Platinum",
+    category: "PSU",
+    brand: "Generic",
+    year: 2024,
+    price: 350,
+    performance: 130,
+    wattage: 2000,
+    efficiency: "80 Plus Platinum",
+    modular: "Fully Modular",
+    standard: "ATX 3.1",
+    pcieConnectors: 6,
+    cpuConnectors: 2,
+    twelveVHPWR: true,
+    image: "https://placehold.co/600x400?text=2000W+Platinum"
+  }
+
+];
+```
